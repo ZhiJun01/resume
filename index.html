@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shao ZhiJun | Resume</title>
+  <meta name="description" content="Resume website of Your Name." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <div>
+      <h1>Shao ZhiJun</h1>
+      <p class="subtitle">Computer Science Graduate • Singapore</p>
+      <p class="links">
+        <a href="mailto:you@email.com">you@email.com</a>
+        <span>•</span>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span>•</span>
+        <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+      </p>
+    </div>
+
+    <div class="cta">
+      <a class="button" href="./resume.pdf" target="_blank" rel="noreferrer">Download PDF</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Summary</h2>
+      <p>
+        Write 2–3 lines about what you do and what roles you’re aiming for. Keep it concrete and not fluffy.
+      </p>
+    </section>
+
+    <section class="card" id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">JavaScript</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">Express</span>
+        <span class="chip">React</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Unity</span>
+      </div>
+    </section>
+
+    <section class="card" id="experience">
+      <h2>Experience</h2>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Role Title — Company</h3>
+          <p class="meta">Month YYYY – Month YYYY • Singapore</p>
+        </div>
+        <ul>
+          <li>Accomplished X by doing Y, resulting in Z (add numbers where possible).</li>
+          <li>Another bullet with impact + scope (volume, %, time saved, users served).</li>
+          <li>Tools: A, B, C.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Role Title — Company</h3>
+          <p class="meta">Month YYYY – Month YYYY • Singapore</p>
+        </div>
+        <ul>
+          <li>Bullet 1</li>
+          <li>Bullet 2</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" id="projects">
+      <h2>Projects</h2>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Project Name</h3>
+          <p class="meta">
+            <a href="https://github.com/yourusername/project" target="_blank" rel="noreferrer">Code</a>
+            <span>•</span>
+            <a href="https://your-live-demo.com" target="_blank" rel="noreferrer">Live</a>
+          </p>
+        </div>
+        <p class="project-desc">
+          1–2 sentences on what it is + what you built (stack + key feature).
+        </p>
+        <ul>
+          <li>One measurable/clear outcome (performance, features, scale, etc.).</li>
+          <li>Tech: X, Y, Z.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" id="education">
+      <h2>Education</h2>
+      <div class="edu">
+        <div>
+          <h3>School Name</h3>
+          <p class="meta">Degree • Year</p>
+        </div>
+        <p class="meta">Relevant modules: …</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
